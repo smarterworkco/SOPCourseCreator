@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(210 25% 7.8431%);
+  --card: hsl(180 6.6667% 97.0588%);
+  --card-foreground: hsl(210 25% 7.8431%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(210 25% 7.8431%);
+  --primary: hsl(213.8 88.2% 53.1%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(250.9 45.1% 58.8%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(210 1.9% 90%);
+  --muted-foreground: hsl(210 25% 7.8431%);
+  --accent: hsl(213.8 51.4% 92.7%);
+  --accent-foreground: hsl(213.8 88.2% 53.1%);
+  --destructive: hsl(356.3 90.6% 54.3%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(201.4 30.4% 90.9%);
+  --input: hsl(200 23.1% 97.5%);
+  --ring: hsl(213.8 88.2% 53.1%);
+  --chart-1: hsl(213.8 88.2% 53.1%);
+  --chart-2: hsl(159.8 100% 36.1%);
+  --chart-3: hsl(42.0 92.8% 56.3%);
+  --chart-4: hsl(147.1 78.5% 41.9%);
+  --chart-5: hsl(341.5 75.2% 51.0%);
+  --sidebar: hsl(180 6.6667% 97.0588%);
+  --sidebar-foreground: hsl(210 25% 7.8431%);
+  --sidebar-primary: hsl(213.8 88.2% 53.1%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(213.8 51.4% 92.7%);
+  --sidebar-accent-foreground: hsl(213.8 88.2% 53.1%);
+  --sidebar-border: hsl(205.0 25.0% 90.6%);
+  --sidebar-ring: hsl(213.8 88.2% 53.1%);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 1px 2px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 1px 2px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 2px 4px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 4px 6px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 8px 10px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(0 0% 0%);
+  --foreground: hsl(200 6.7% 91.2%);
+  --card: hsl(228 9.8% 10%);
+  --card-foreground: hsl(0 0% 85.1%);
+  --popover: hsl(0 0% 0%);
+  --popover-foreground: hsl(200 6.7% 91.2%);
+  --primary: hsl(213.8 87.6% 52.5%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(195.0 15.4% 94.9%);
+  --secondary-foreground: hsl(210 25% 7.8431%);
+  --muted: hsl(0 0% 9.4%);
+  --muted-foreground: hsl(210 3.4% 46.3%);
+  --accent: hsl(205.7 70% 7.8%);
+  --accent-foreground: hsl(213.8 87.6% 52.5%);
+  --destructive: hsl(356.3 90.6% 54.3%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(210 5.3% 14.9%);
+  --input: hsl(207.7 27.7% 18.4%);
+  --ring: hsl(213.8 88.2% 53.1%);
+  --chart-1: hsl(213.8 88.2% 53.1%);
+  --chart-2: hsl(159.8 100% 36.1%);
+  --chart-3: hsl(42.0 92.8% 56.3%);
+  --chart-4: hsl(147.1 78.5% 41.9%);
+  --chart-5: hsl(341.5 75.2% 51.0%);
+  --sidebar: hsl(228 9.8% 10%);
+  --sidebar-foreground: hsl(0 0% 85.1%);
+  --sidebar-primary: hsl(213.8 88.2% 53.1%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(205.7 70% 7.8%);
+  --sidebar-accent-foreground: hsl(213.8 87.6% 52.5%);
+  --sidebar-border: hsl(205.7 15.8% 26.1%);
+  --sidebar-ring: hsl(213.8 88.2% 53.1%);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 1px 2px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 1px 2px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 2px 4px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 4px 6px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00), 0px 8px 10px -1px hsl(213.8 88.2% 53.1% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(213.8 88.2% 53.1% / 0.00);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+/* Custom gradient backgrounds from design */
+.hero-gradient {
+  background: linear-gradient(135deg, hsl(213.8 88.2% 96%) 0%, hsl(250.9 45.1% 96%) 100%);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, hsl(213.8 88.2% 53.1%) 0%, hsl(250.9 45.1% 58.8%) 100%);
+}
+
+/* Mobile-first responsive typography */
+@media (max-width: 640px) {
+  .hero-title {
+    @apply text-4xl;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    @apply text-6xl;
+  }
+}
+
+/* Custom animations for interactive elements */
+.transition-colors {
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.transition-shadow {
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Quiz interface styling */
+.quiz-option {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.quiz-option:hover {
+  @apply bg-gray-50 dark:bg-gray-800;
+}
+
+.quiz-option.selected {
+  @apply bg-blue-50 border-blue-500 dark:bg-blue-950/20;
+}
+
+.quiz-option.correct {
+  @apply bg-emerald-50 border-emerald-500 dark:bg-emerald-950/50;
+}
+
+.quiz-option.incorrect {
+  @apply bg-red-50 border-red-500 dark:bg-red-950/50;
+}
+
+/* Progress indicators */
+.progress-bar {
+  @apply transition-all duration-300 ease-out;
+}
+
+/* Loading states */
+.loading-shimmer {
+  animation: shimmer 1.5s ease-in-out infinite;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
